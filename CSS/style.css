@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=RocknRoll+One&display=swap');
+
+* {
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #9ccfd8;
+    color: #6e6a86;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 50px 1fr 60px;
+    grid-template-areas: 
+        'n'
+        'h1'
+        'm'
+        'f';
+    width: 100vw;
+    height: 100vh;
+    padding-top: 1rem;
+}
+
+nav {
+    grid-area: n;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    grid-area: m;
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    's'
+    'c';
+}
+
+.shop-items {
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+    grid-area: c;
+    background-color: #e0def4;
+    margin: 1rem;
+    
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e0def4;
+
+}
+
+.cart-row span {
+    background-color: #e0def4;
+
+}
+
+hr {
+    margin: 1rem;
+}
+
+
+
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    background-color: #c4a7e7;
+    color: #e0def4;
+}
+
+footer p {
+    background-color: #c4a7e7;
+    color: #e0def4;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    grid-area: h1;
+    display: flex;
+    justify-content: center;
+    background-color: #c4a7e7;
+    max-height: 50px;
+    color: #e0def4;
+    padding: 0%;
+    margin: 0;
+}
+
+h2 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    background-color: #e0def4;
+
+}
+
+@media screen and (min-width: 641px) {
+    * {
+        font-family: 'RocknRoll One', sans-serif;
+        background-color: #d89c9c;
+        color: #6e6a86;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 50px 1fr 30px;
+        grid-template-areas: 
+            'n'
+            'h1'
+            'm'
+            'f';
+        width: 100vw;
+        height: 100vh;
+        padding-top: 1rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .shop-items {
+        grid-area: s;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
